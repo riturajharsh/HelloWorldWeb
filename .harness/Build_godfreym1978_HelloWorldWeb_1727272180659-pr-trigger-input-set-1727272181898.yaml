@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_godfreym1978_HelloWorldWeb_1727272180659-pr-trigger-input-set
+  identifier: Build_godfreym1978_HelloWorldWeb_1727272180659prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: helloworld
+  pipeline:
+    identifier: Build_godfreym1978_HelloWorldWeb_1727272180659
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
