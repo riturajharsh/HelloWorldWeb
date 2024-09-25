@@ -27,16 +27,16 @@ pipeline:
                   timeout: ""
                   type: Run
               - step:
-                  identifier: dockerbuild
-                  name: docker_build
+                  type: BuildAndPushGCR
+                  name: BuildAndPushGCR_1
+                  identifier: BuildAndPushGCR_1
                   spec:
-                    caching: true
-                    connectorRef: <+input>
-                    repo: hello/world
+                    connectorRef: gpmgcp3q24
+                    host: gcr.io
+                    projectID: steam-insight-430414-n9
+                    imageName: helloworld
                     tags:
-                      - latest
-                  timeout: ""
-                  type: BuildAndPushDockerRegistry
+                      - test
           platform:
             os: Linux
             arch: Amd64
