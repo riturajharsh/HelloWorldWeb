@@ -31,7 +31,7 @@ pipeline:
                   name: docker_build
                   spec:
                     connectorRef: <+input>
-                    repo: hello/world
+                    repo: gmenezes/gpmrepo
                     tags:
                       - latest
                     caching: true
