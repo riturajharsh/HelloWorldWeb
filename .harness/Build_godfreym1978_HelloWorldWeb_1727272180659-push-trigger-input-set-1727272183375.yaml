@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_godfreym1978_HelloWorldWeb_1727272180659-push-trigger-input-set
+  identifier: Build_godfreym1978_HelloWorldWeb_1727272180659pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: helloworld
+  pipeline:
+    identifier: Build_godfreym1978_HelloWorldWeb_1727272180659
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
