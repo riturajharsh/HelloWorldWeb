@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: simple-java-app
+  namespace: development
 spec:
   replicas: 3
   selector:
