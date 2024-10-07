@@ -30,9 +30,7 @@ pipeline:
                   identifier: dockerbuild
                   name: docker_build
                   spec:
-                    connectorRef: googlecloudgpmgcp3q24
-                    host: us-central1-docker.pkg.dev
-                    projectID: steam-insight-430414-n9
+                    connectorRef: artifactregistryconn
                     repo: us-central1-docker.pkg.dev/steam-insight-430414-n9/helloworld/test
                     tags:
                       - latest
