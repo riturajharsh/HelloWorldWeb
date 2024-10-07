@@ -15,7 +15,7 @@ service:
                   connectorRef: account.Github
                   gitFetchType: Branch
                   paths:
-                    - deployment.yaml
+                    - deployment-dev.yaml
                     - service.yaml
                   repoName: HelloWorldWeb
                   branch: master
