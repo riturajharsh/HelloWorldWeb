@@ -27,16 +27,17 @@ pipeline:
                   timeout: ""
                   type: Run
               - step:
-                  identifier: dockerbuild
-                  name: docker_build
+                  type: BuildAndPushGAR
+                  name: BuildAndPushGAR_1
+                  identifier: BuildAndPushGAR_1
                   spec:
-                    connectorRef: artifactregistryconn
-                    repo: us-central1-docker.pkg.dev/steam-insight-430414-n9/helloworld/test
+                    connectorRef: googlecloudgpmgcp3q24
+                    host: us-central1-docker.pkg.dev
+                    projectID: steam-insight-430414-n9
+                    imageName: helloworld
                     tags:
                       - latest
                     caching: true
-                  timeout: ""
-                  type: BuildAndPushDockerRegistry
           platform:
             os: Linux
             arch: Amd64
