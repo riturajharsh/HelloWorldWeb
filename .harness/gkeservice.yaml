@@ -1,0 +1,5 @@
+service:
+  name: gke-service
+  identifier: gkeservice
+  orgIdentifier: default
+  projectIdentifier: helloworld
