@@ -3,3 +3,6 @@ service:
   identifier: deploygke
   orgIdentifier: default
   projectIdentifier: helloworld
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes
