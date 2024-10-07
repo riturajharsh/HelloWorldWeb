@@ -31,7 +31,7 @@ pipeline:
                   name: docker_build
                   spec:
                     connectorRef: googlecloudgpmgcp3q24
-                    repo: us-central1-docker.pkg.dev/steam-insight-430414-n9/helloworldweb/test
+                    repo: https://console.cloud.google.com/artifacts/docker/steam-insight-430414-n9/us-central1/helloworld
                     tags:
                       - latest
                     caching: true
