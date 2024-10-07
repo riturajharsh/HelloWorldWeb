@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: simple-java-app
-        image: us-central1-docker.pkg.dev/{{.Values.image.project}}/{{.Values.image.name}}:{{.Values.image.tag}}
+        image: us-central1-docker.pkg.dev/steam-insight-430414-n9/helloworld/helloworldweb:latest
         ports:
         - containerPort: 8080
