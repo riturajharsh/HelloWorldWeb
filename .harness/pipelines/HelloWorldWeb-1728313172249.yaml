@@ -33,6 +33,7 @@ pipeline:
                     connectorRef: googlecloudgpmgcp3q24
                     projectID: steam-insight-430414-n9
                     repo: gcr.io/steam-insight-430414-n9/helloworldweb
+                    imageName: gcr.io/steam-insight-430414-n9/helloworldweb:latest
                     tags:
                       - latest
                     caching: true
