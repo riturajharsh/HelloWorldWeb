@@ -1,0 +1,5 @@
+service:
+  name: deploy-gke
+  identifier: deploygke
+  orgIdentifier: default
+  projectIdentifier: helloworld
