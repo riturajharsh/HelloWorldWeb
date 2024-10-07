@@ -1,0 +1,5 @@
+image:
+  name: <+pipeline.variables.imageName>
+  tag: <+pipeline.variables.imageTag>
+  project: <+pipeline.variables.imageProject>
+  
