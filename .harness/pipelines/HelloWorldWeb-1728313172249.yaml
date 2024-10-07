@@ -31,10 +31,7 @@ pipeline:
                   name: docker_build
                   spec:
                     connectorRef: googlecloudgpmgcp3q24
-                    projectID: steam-insight-430414-n9
-                    host: us-central1-docker.pkg.dev
                     repo: us-central1-docker.pkg.dev/steam-insight-430414-n9/helloworldweb/test
-                    imageName: helloworldweb/test
                     tags:
                       - latest
                     caching: true
