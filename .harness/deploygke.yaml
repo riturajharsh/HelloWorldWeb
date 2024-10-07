@@ -4,5 +4,24 @@ service:
   orgIdentifier: default
   projectIdentifier: helloworld
   serviceDefinition:
-    spec: {}
+    spec:
+      manifests:
+        - manifest:
+            identifier: gkemanifest
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: account.Github
+                  gitFetchType: Branch
+                  paths:
+                    - deployment.yaml
+                    - service.yaml
+                  repoName: HelloWorldWeb
+                  branch: master
+              valuesPaths:
+                - values.yaml
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
     type: Kubernetes
