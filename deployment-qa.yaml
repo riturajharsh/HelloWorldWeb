@@ -4,7 +4,7 @@ metadata:
   name: simple-java-app
   namespace: qa
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: simple-java-app
