@@ -59,11 +59,6 @@ pipeline:
             deployToAll: false
             infrastructureDefinitions:
               - identifier: development
-                inputs:
-                  identifier: development
-                  type: KubernetesGcp
-                  spec:
-                    provisioner: <+input>
           execution:
             steps:
               - step:
