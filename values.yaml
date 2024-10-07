@@ -1,5 +1,5 @@
 image:
-  name: <+pipeline.variables.imageName>
-  tag: <+pipeline.variables.imageTag>
-  project: <+pipeline.variables.imageProject>
+  name: helloworldweb
+  tag: latest
+  project: steam-insight-430414-n9
   
