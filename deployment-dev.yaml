@@ -5,6 +5,7 @@ metadata:
   namespace: development
 spec:
   replicas: 1
+  progressDeadlineseconds: 600
   selector:
     matchLabels:
       app: simple-java-app
