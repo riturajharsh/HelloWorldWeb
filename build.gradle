@@ -20,6 +20,3 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
-
-task buildDocker (type: Exec) {
-	commandLine 'sh', '-c' 'docker build -t riturajmishra662/java-springboot-microservice:latest . && docker push riturajmishra662/java-springboot-microservice:latest'
