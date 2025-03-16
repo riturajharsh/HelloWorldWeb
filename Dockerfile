@@ -1,5 +1,5 @@
 # Use Gradle as the parent image instead of Maven
-FROM gradle:7.3-jdk15 AS GRADLE_BUILD
+FROM openjdk:15-slim AS GRADLE_BUILD
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -8,10 +8,10 @@ WORKDIR /app
 COPY . .
 
 # Build the application using Gradle
-RUN gradle clean build --no-daemon
+RUN ./gradlew build -x test
 
 # Use a lightweight JDK runtime for running the application
-FROM eclipse-temurin:15-jre AS runtime
+FROM openjdk:15-slim AS runtime
 
 # Copy only the built JAR file from the previous stage
 COPY --from=GRADLE_BUILD /app/build/libs/*.jar /rest-service-complete.jar
