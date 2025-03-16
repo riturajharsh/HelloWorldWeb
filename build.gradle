@@ -19,6 +19,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+tasks.withType(JavaCompile) {
+    options.compilerArgs.add("--enable-preview")
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
