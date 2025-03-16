@@ -1,5 +1,5 @@
 # Use Gradle as the parent image instead of Maven
-FROM gradle:8.3-jdk17 AS GRADLE_BUILD
+FROM gradle:7.4.2-jdk15 AS GRADLE_BUILD
 
 # Set the working directory inside the container
 WORKDIR /app
